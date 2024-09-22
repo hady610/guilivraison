@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inscription</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+           <!-- debut entete de la page -->
+           <nav class="navbar  navbar-expand-lg  " style="font-weight:600; ">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-nav " href="index.html">
+                    <img src="img/logo.jpg" alt="Logo" width="90" height="65" class="d-inline-block align-text-top">
+                    <h4 class="my-auto" style="color: dodgerblue;">GUI-LIVRAISON</h4>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+                        <li class="nav-item">
+                            <a class="nav-link active " style="color: dodgerblue;" href="index.html">ACCUEIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active " style="color: dodgerblue;" href="login.html">CONNEXION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active " style="color: dodgerblue;" href="signup.html">INSCRIPTION</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- fin entete de la page -->
+
+        <!-- debut section inscription -->
+        <div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
+            <div class="card" style="width: 500px; height: 450px;">
+                <div class="card-body">
+                    <div class="container mt-3">
+                        <h3 class="text-center">Inscription</h3>
+                        <form action="/submit" method="POST">
+                            <div class="form-group">
+                                <label for="fullname">Nom d'utilisateur</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mot de passe</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Confirmation du mot de passe</label>
+                                <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                            </div>
+                            <br>
+                            <button type="submit" class="py-2"  style="width: 100%;">Se connecter</button>
+                            <!-- Lien vers la page d'inscription -->
+                            <div class="text-center mt-3">
+                                <p>deja un compte ? <a href="login.html">Se connecter</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin section inscription -->
+        </div>
+    </body>
+</html>
+
+<style>
+    form button
+    {
+        background-color:  dodgerblue;
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    button:hover
+    {
+        background-color:rgb(105, 188, 240);
+        cursor: pointer;
+        border: 1px solid blue;
+        color: black;
+        font-weight: 600
+    }
+</style>
